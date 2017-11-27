@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FrontCapm ES6 table Task</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="with-spinner">
+    <div class="main-container">
+        <form class="form" name="search-form">
+                <h2>Search news by newsapi</h2>
+                <div class="radios-container">
+                    <input id="queryRadio" type="radio" name="radio" value="query" checked>
+                    <label for="queryRadio">by query</label>
+                    <input id="catigoriesRadio" type="radio" name="radio"  value="catigories">
+                    <label for="catigoriesRadio">by catigories</label>
+                </div>
+                <div class="inputs-container">
+                    <input class="form__input active" type="search" name="query" placeholder="Key words"/>
+                    <select class="form__input" name="catigories">
+                        <option value="business">Business</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="general">General</option>
+                        <option value="health-and-medical">Health and medical</option>
+                        <option value="music">Music</option>
+                        <option value="politics">Politics</option>
+                        <option value="science-and-nature">Science and nature</option>
+                        <option value="sport">Sport</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                    <button class="form__submit" type="submit">Search</button>
+                </div>
+        </form>
+        <div class="articles-container"></div>
+    </div>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
