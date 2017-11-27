@@ -7,9 +7,13 @@ class GetArticles {
     static sortArticlesByDate(articles) {
         return articles.filter(article => article.publishedAt !== null)
             .map((article) => {
-                let { publishedAt } = article;
+                const { source: { name } } = article;
+                let { publishedAt, author } = article;
+
+                author = (author === null) ? name : author;
                 publishedAt = new Date(publishedAt);
-                return Object.assign(article, { publishedAt });
+
+                return Object.assign(article, { publishedAt, author });
             })
             .sort((articleB, articleA) => (
                 Number(articleA.publishedAt) - Number(articleB.publishedAt)
