@@ -21,7 +21,7 @@ class GetArticles {
         const { searchUrl, apiKey } = this;
 
         switch (searchKey) {
-            case 'catigories': {
+            case 'categories': {
                 return `${searchUrl}top-headlines?category=${searchValue}&apiKey=${apiKey}`;
             }
             case 'sources': {
