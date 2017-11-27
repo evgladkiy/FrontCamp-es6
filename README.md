@@ -1,6 +1,6 @@
 ## ES6
 
-###  [Demo](http://es6.bitballoon.com/)
+###  [Demo](https://evgladkiy.github.io/FrontCamp-es6/)
 
 ### Task:
 
